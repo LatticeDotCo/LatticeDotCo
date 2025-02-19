@@ -6,7 +6,7 @@ export default defineConfig({
   site: 'https://latticecorp.cloud/',
   integrations: [tailwind()],
   adapter: cloudflare({
-    imageService: 'passthrough'
+    imageService: 'cloudflare'
   }),
   output: 'server',
 })
