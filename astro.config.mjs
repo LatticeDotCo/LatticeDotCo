@@ -1,5 +1,6 @@
-import { defineConfig } from 'astro/config'
+// @ts-check
+import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://latticecorp.cloud',
-})
+    site: 'https://latticecorp.cloud/',
+  })
