@@ -23,8 +23,7 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         with:
-         path: /dist
-         node-version: 18.20.6 #
+         node-version: 18.20.6
          package-manager: pnpm@latest
 
   deploy:
