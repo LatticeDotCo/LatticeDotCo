@@ -3,7 +3,7 @@ import tailwind from "@astrojs/tailwind";
 import cloudflare from '@astrojs/cloudflare';
 
 export default defineConfig({
-  site: 'http://latticecorp.cloud/',
+  site: 'https://latticecorp.cloud/',
   integrations: [tailwind()],
   adapter: cloudflare({
     imageService: 'passthrough'
