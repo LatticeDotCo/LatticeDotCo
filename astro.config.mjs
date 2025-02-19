@@ -5,6 +5,8 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
   site: 'https://latticecorp.cloud/',
   integrations: [tailwind()],
+  adapter: cloudflare({
+    imageService: 'passthrough'
+  }),
   output: 'server',
-  adapter: cloudflare(),
 })
