@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Author Name on Lattice Services</title>
+    <link>http://localhost:1313/en/author/author-name/</link>
+    <description>Recent Posts in Author Name on Lattice Services</description>
+    <generator>Hugo 0.144.2</generator>
+    <language>en-us</language>
+    <managingEditor>Author Name</managingEditor>
+    
+      <webMaster>Author Name</webMaster>
+    <lastBuildDate>Sat, 22 Feb 2025 03:17:32 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/author/author-name/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

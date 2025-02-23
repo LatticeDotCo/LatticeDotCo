@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <meta http-equiv="refresh" content="15;url=http://localhost:1313/">
+    <!-- css.html -->
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css"><style>
+        h1 {--anm: fade 15s;-webkit-animation: var(--anm);-moz-animation: var(--anm);-o-animation: var(--anm);animation: var(--anm);font-size: 5rem;}
+        h1::after {font-size: 2rem}
+        @keyframes fade {0% {opacity: 1} 100% {opacity: 0}}
+        @-webkit-keyframes fade {0% {opacity: 1} 100% {opacity: 0}}
+    </style>
+</head>
+<body id="page404">
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true"></div>
+    
+    <nav aria-label="Bypass Navigation">
+        <a id="to-content" class="underline" href="#list-posts" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/" aria-label="Lattice Services">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="448pt">
+            <text id="logotype__text" y="19.5pt" x="0">Lattice Services</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top Nav">
+            <!-- menu.html -->
+            
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    <main class="pagewidth" style="display: flex; flex-direction: column;">
+        <div class="textwidth" style="margin:auto;">
+            <h1 class="has-aria-label" aria-label="Page Not Found">404</h1>
+            <p role="alert">This page intentionally redirect <a href="/" class="loading">back to homepage</a></p>
+        </div>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background" role="presentation"></div>
+    <!-- focusMode.html -->
+    <div id="focusMode" class="hide">
+        <input
+            id="defocusAuxElement"
+            accesskey="d" type="checkbox"
+            onclick="focusMode()"
+            aria-keyshortcuts="d"
+            aria-label="Focus Mode"
+            >
+            <label id="focusModeButton" for="defocusAuxElement">⦿</label>
+    </div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" disabled>
+        <!-- brightness & contrast -->
+        <div id="setColorScheme" role="group" aria-label="Color Settings">
+            <!-- darkMode.html -->
+    <input
+        id="lightSwitch"
+        type="checkbox"
+        onclick="setColor()"
+        aria-label="Dark Mode"
+        >
+        <label for="lightSwitch">
+            <div class="has-aria-label off" role="status" aria-label="Light"></div>
+            <div class="has-aria-label on" role="status" aria-label="Dark"></div>
+            <div id="lightSwitchIndicator" aria-hidden="true"></div>
+        </label>
+            <!-- contrast.html -->
+    <fieldset id="setContrast">
+        <legend>Contrast</legend>
+        <input
+            id="lessContrast"
+            type="radio" name="setContrast" value="less"
+            onclick="setColor()"
+            >
+            <label for="lessContrast">
+                <span>Low</span>
+            </label>
+        <input
+            id="defaultContrast"
+            type="radio" name="setContrast" value="default"
+            onclick="setColor()"
+            >
+            <label for="defaultContrast">
+                <span>Default</span>
+            </label>
+        <input
+            id="moreContrast"
+            type="radio" name="setContrast" value="more"
+            onclick="setColor()"
+            >
+            <label for="moreContrast">
+                <span>High</span>
+            </label>
+    </fieldset>
+        </div>
+        <!-- colorPalette.html -->
+    <div id="setColorPalette" style="display:none;">
+        <label for="colorPalette">Color Palette</label>
+        <select id="colorPalette" name="colorPalette" oninput="setColorPalette()">
+            <option value="defaultColor">Default</option>
+            <option value="deuteranopia">Deuteranopia</option>
+            <option value="protanopia">Protanopia</option>
+            <option value="tritanopia">Tritanopia</option>
+            <option value="monochrome">Monochrome</option>
+        </select>
+    </div>
+        <!-- fontsize.html -->
+    <div class="has-aria-label-top" aria-label="Font Size">
+        <label class="range" for="fontSize" aria-label="Font Size">
+            <input
+                id="fontSize"
+                type="range" min="8" max="12" step="0.5"
+                oninput="setFontSize()">
+            <output
+                id="fontSizeState"
+                onclick="resetFontSize()"
+                aria-live="polite"
+                >10</output>
+        </label>
+    </div>
+        <!-- baselineStretch.html -->
+    <div id="setBaselineStretch" class="has-aria-label-top" aria-label="Baseline Stretch">
+        <label class="range" for="baselineStretch">
+            <input
+                id="baselineStretch"
+                type="range" min="0.8" max="1.2" step="0.05"
+                oninput="setStretch()"
+                >
+            <output
+                id="baselineStretchState"
+                onclick="resetStretch()"
+                aria-live="polite"
+                >1</output>
+        </label>
+    </div>
+        <!-- OpenDyslexic.html -->
+    <div id="setOpenDyslexic">
+        <input
+            id="OpenDyslexic"
+            type="checkbox"
+            onclick="useOpenDyslexic()"
+            aria-label="Use OpenDyslexic Font"
+            >
+            <label
+                class="has-aria-label-top"
+                for="OpenDyslexic"
+                aria-label="Use OpenDyslexic Font"
+                >
+                <span id="OpenDyslexicState" aria-hidden="true">
+                    <span id="OpenDyslexicIndicator"></span>
+                </span>
+            </label>
+    </div>
+        <!-- menu.html -->
+    <menu
+        id="a11y-menu"
+        class="hide"
+        role="toolbar"
+        aria-label="Accessibility Menu Controls"
+        >
+        <button
+            id="saveButton" class="reverse"
+            onclick="saveA11y()"
+            disabled>Save
+        </button>
+        <button
+            id="resetButton" class="has-aria-label"
+            onclick="resetA11y()"
+            aria-label="Reset"
+            disabled>
+        </button>
+        <button
+            id="closeButton" class="has-aria-label"
+            onclick="closeA11yConsole()"
+            aria-label="Close"
+            >
+        </button>
+    </menu>
+        <noscript>
+            <center id="noScript" role="alert">Uh-oh... Javascript is disabled!</center>
+        </noscript>
+        <center id="noLocalStorage" class="hide" role="alert">LocalStorage is not available in your browser. Settings won&#39;t be saved.</center>
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <!-- bionread.html -->
+    <div id="useBionRead" class="hide">
+        <input
+            id="bionReadSwitch"
+            accesskey="b" type="checkbox"
+            onclick="bionRead()"
+            aria-keyshortcuts="b"
+            aria-label="BionRead Mode"
+            >
+            <label id="bionReadButton" for="bionReadSwitch">
+                <span><strong>Bion</strong>Read</span>
+                <kbd class="key">b</kbd>
+            </label>
+    </div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass Navigation">
+        <a id="to-top" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <kbd class="key">c</kbd>
+        </a>
+    </nav>
+</footer>
+    <div id="background-body" role="presentation"></div>
+</body>
+</html>

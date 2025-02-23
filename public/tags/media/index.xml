@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Media on </title>
+    <link>http://localhost:1313/tags/media/</link>
+    <description>Recent Posts in Media on </description>
+    <generator>Hugo 0.144.2</generator>
+    <language>en-us</language>
+    <managingEditor>Lattice Corp</managingEditor>
+    
+      <webMaster>Lattice Corp</webMaster>
+    <lastBuildDate>Sun, 23 Feb 2025 01:57:00 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/media/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Authoring Cover Images and Audio Articles</title>
+      <link>http://localhost:1313/en/post/evaluacion-menu/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <author>Lattice Corp</author>
+      <guid>http://localhost:1313/en/post/evaluacion-menu/</guid>
+      <description></description>
+      
+    </item>
+  </channel>
+</rss>

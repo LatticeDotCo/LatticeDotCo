@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistemas Recomendadores en operaciones | Lattice Services</title>
+<meta name="author" content="mnava">
+<meta name="description" content="&gt; Revisa nuestro proceso de implementación para entornos mineros." >
+<meta name="keywords" content="Mineria,DevOps,IaC,ml pipelines,LLMs">
+<link rel="canonical" href="http://localhost:1313/en/post/sistema_recom/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sistemas Recomendadores en operaciones | Lattice Services" />
+    <meta name="twitter:description" content="&gt; Revisa nuestro proceso de implementación para entornos mineros." />
+        <meta name="twitter:image" content="https://repository-images.githubusercontent.com/923527728/46a32a19-69ac-45b3-91a4-c4d299fb234b" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="Sistemas Recomendadores en operaciones | Lattice Services" />
+    <meta property="og:description" content="&gt; Revisa nuestro proceso de implementación para entornos mineros." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/sistema_recom/" />
+        <meta property="og:image" content="https://repository-images.githubusercontent.com/923527728/46a32a19-69ac-45b3-91a4-c4d299fb234b" />
+    <meta property="og:site_name" content="Lattice Services" /><!-- js.html -->
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+    
+        
+    <!-- css/verbatim.html -->
+        <link href="http://localhost:1313/css/typesetting/verbatim.min.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body  id="post" >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true"></div>
+    
+    <nav aria-label="Bypass Navigation">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/" aria-label="Lattice Services">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="448pt">
+            <text id="logotype__text" y="19.5pt" x="0">Lattice Services</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top Nav">
+            <!-- menu.html -->
+            
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+            <!-- menu.html -->
+    <menu role="presentation">
+        <li>
+            <a id="print-button" class="hide" href="javascript:window.print()" title="Print" role="button" aria-label="Print">
+                <span class="t" role="tooltip">Print</span>
+            </a>
+        </li>
+        <li>
+            <a id="navigatorShare" href="#share" title="Share" role="button" aria-label="Share">
+                <span class="t" role="tooltip">Share</span>
+            </a>
+        </li>
+        <li>
+            <a id="copyPermalink" class="hide" href="javascript:navigator.clipboard.writeText(window.location.href)" title="Copy Url" role="button" aria-label="Copy Url">
+                <span class="t" role="tooltip">Copy Url</span>
+            </a>
+        </li>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/" aria-current="true">
+            </a>
+        </li>
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Servicios
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">Sistemas Recomendadores en operaciones
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+
+    <article id="main-article" class="pagewidth"
+        role="document" aria-labelledby="title"
+            data-pagefind-body>
+        <header class="textwidth" aria-labelledby="title">
+            <!-- title.html -->
+        <hgroup data-bionRead-safe>
+            <h1 id="title"
+                    data-pagefind-meta="title"
+                >Sistemas Recomendadores en operaciones</h1>
+            <p  class="subtitle"
+                role="doc-subtitle">&gt; Revisa nuestro proceso de implementación para entornos mineros.</p>
+        </hgroup>
+            <div id="doc-author" class="textsw author"><span>mnava</span>
+            </div>
+            <!-- timestamp.html-->
+    <div >
+        <time class="doc-publish-date" datetime="2025-02-22T00:00:00&#43;00:00" data-time-label="Published on">February 22, 2025</time>
+    </div>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <p>To add a cover image to your article, you have two options:</p>
+<ol>
+<li>Front Matter Method</li>
+</ol>
+<p>You can use either <code>cover</code> or <code>images</code> parameter for the images source.
+And <code>alt</code>, <code>coverAlt</code> or <code>imagesAlt</code> parameter for alt text.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;My Article&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">images</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;images/my-cover.jpg&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">alt</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Description of the images&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></div><ol start="2">
+<li>Page Bundle Method</li>
+</ol>
+<ul>
+<li>Create a folder for your post</li>
+<li>Name your image <code>cover.*</code></li>
+<li>Place it in the same folder as your content</li>
+<li>Set the alt text in your post frontmatter</li>
+</ul>
+<h2 id="adding-audio-articles">Adding Audio Articles</h2>
+<ol>
+<li>Front Matter Method</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;My Article&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">audio</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;audio/my-audio.ogg&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></div><ol start="2">
+<li>Page Bundle Method</li>
+</ol>
+<p>You can upload multiple audio format with this method:</p>
+<ul>
+<li>Create a folder for your post</li>
+<li>Name your audio <code>audio.*</code></li>
+<li>Place it in the same folder as your content</li>
+</ul>
+<h2 id="page-bundle-method-examples">Page Bundle Method Examples</h2>
+<p>Here&rsquo;s how your folder structure should look:</p>
+<pre><code>content/
+└── posts/
+    └── my-article/
+        ├── index.md
+        ├── cover.jpg
+        ├── audio.mp3
+        └── audio.ogg
+</code></pre>
+
+        </section>
+        <footer>
+            
+    <div id="keywords">
+        <span>Tags:&nbsp;</span>
+        
+        <!-- terms.html -->
+    <ul class="delimiter" role="presentation">
+            <li><a href="/tags/mineria/">Mineria</a></li>
+            <li><a href="/tags/devops/">Dev Ops</a></li>
+            <li><a href="/tags/iac/">Ia C</a></li>
+            <li><a href="/tags/ml-pipelines/">Ml Pipelines</a></li>
+            <li><a href="/tags/llms/">Llms</a></li>
+    </ul>
+    </div>
+        </footer>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- related.html -->
+    <nav id="related">
+        <strong class="section-title">You might also like</strong><ol>
+                    <li><a href="/en/post/mlops/">MLOps en entornos complejos</a></li>
+                    <li><a href="/en/post/lakehouse/">Arquitectura Lakehouse para implementar BI &amp; AI</a></li>
+                </ol>
+    </nav>
+            <!-- history.html -->
+            <!-- colophon.html -->
+    <div id="colophon" style="display: none;" aria-live="polite">
+        <strong class="section-title">Colophon</strong>
+        <div class="f">
+            <div id="qr" role="img" aria-label="QR code"></div>
+            <div class="verbose">
+                <div class="has-aria-label-top" aria-label="Sistemas Recomendadores en operaciones"><span>http://localhost:1313/en/post/sistema_recom/</span></div>
+                <div><span>This page is accessed on: </span><time id="time-stamp"></time></div>
+                <div><span>This page is built on: </span><time datetime="2025-02-23T02:31:00-03:00">2025-02-23T02:31:00-03:00</time></div>
+                
+            </div>
+        </div>
+    </div>
+        
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="Sistemas Recomendadores en operaciones">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/sistema_recom/">
+        <input id="mastodonText" type="hidden" name="text" value="Sistemas Recomendadores en operaciones http://localhost:1313/en/post/sistema_recom/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=Sistemas%20Recomendadores%20en%20operaciones&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2fsistema_recom%2f" role="button" aria-label="Share on Email">
+            <i class="email" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=Sistemas%20Recomendadores%20en%20operaciones%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2fsistema_recom%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=Sistemas%20Recomendadores%20en%20operaciones&amp;url=http://localhost:1313/en/post/sistema_recom/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=Sistemas%20Recomendadores%20en%20operaciones&amp;url=http://localhost:1313/en/post/sistema_recom/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/sistema_recom/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/sistema_recom/&amp;t=Sistemas%20Recomendadores%20en%20operaciones" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/sistema_recom/&amp;title=Sistemas%20Recomendadores%20en%20operaciones&amp;summary=Sistemas%20Recomendadores%20en%20operaciones&amp;source=http://localhost:1313/en/post/sistema_recom/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/sistema_recom/&amp;media=http://localhost:1313/en/post/sistema_recom/&amp;description=Sistemas%20Recomendadores%20en%20operaciones" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/sistema_recom/&amp;resubmit=true&amp;title=Sistemas%20Recomendadores%20en%20operaciones" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Sistemas%20Recomendadores%20en%20operaciones&amp;caption=Sistemas%20Recomendadores%20en%20operaciones&amp;content=http://localhost:1313/en/post/sistema_recom/&amp;canonicalUrl=http://localhost:1313/en/post/sistema_recom/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=Sistemas%20Recomendadores%20en%20operaciones&amp;url=http://localhost:1313/en/post/sistema_recom/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=Sistemas%20Recomendadores%20en%20operaciones&amp;url=http://localhost:1313/en/post/sistema_recom/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/sistema_recom/;title=Sistemas%20Recomendadores%20en%20operaciones" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Lattice Corp<i class="icon copyleft"></i> 2025</strong></p>
+<p>Some rights reserved.</p>
+<br>
+<strong class="section-title">DATA / ML / GenIA / DevOps / IaC / IDP </strong>
+<p>Acelera el delivery de soluciones tecnológicas con nosotros.</p>
+
+                    </div>
+                <div id="main-footer-secondary" class="column" style="--col: 15rem">                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background" role="presentation"></div>
+    <!-- focusMode.html -->
+    <div id="focusMode" class="hide">
+        <input
+            id="defocusAuxElement"
+            accesskey="d" type="checkbox"
+            onclick="focusMode()"
+            aria-keyshortcuts="d"
+            aria-label="Focus Mode"
+            >
+            <label id="focusModeButton" for="defocusAuxElement">⦿</label>
+    </div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" disabled>
+        <!-- brightness & contrast -->
+        <div id="setColorScheme" role="group" aria-label="Color Settings">
+            <!-- darkMode.html -->
+    <input
+        id="lightSwitch"
+        type="checkbox"
+        onclick="setColor()"
+        aria-label="Dark Mode"
+        >
+        <label for="lightSwitch">
+            <div class="has-aria-label off" role="status" aria-label="Light"></div>
+            <div class="has-aria-label on" role="status" aria-label="Dark"></div>
+            <div id="lightSwitchIndicator" aria-hidden="true"></div>
+        </label>
+            <!-- contrast.html -->
+    <fieldset id="setContrast">
+        <legend>Contrast</legend>
+        <input
+            id="lessContrast"
+            type="radio" name="setContrast" value="less"
+            onclick="setColor()"
+            >
+            <label for="lessContrast">
+                <span>Low</span>
+            </label>
+        <input
+            id="defaultContrast"
+            type="radio" name="setContrast" value="default"
+            onclick="setColor()"
+            >
+            <label for="defaultContrast">
+                <span>Default</span>
+            </label>
+        <input
+            id="moreContrast"
+            type="radio" name="setContrast" value="more"
+            onclick="setColor()"
+            >
+            <label for="moreContrast">
+                <span>High</span>
+            </label>
+    </fieldset>
+        </div>
+        <!-- colorPalette.html -->
+    <div id="setColorPalette" style="display:none;">
+        <label for="colorPalette">Color Palette</label>
+        <select id="colorPalette" name="colorPalette" oninput="setColorPalette()">
+            <option value="defaultColor">Default</option>
+            <option value="deuteranopia">Deuteranopia</option>
+            <option value="protanopia">Protanopia</option>
+            <option value="tritanopia">Tritanopia</option>
+            <option value="monochrome">Monochrome</option>
+        </select>
+    </div>
+        <!-- fontsize.html -->
+    <div class="has-aria-label-top" aria-label="Font Size">
+        <label class="range" for="fontSize" aria-label="Font Size">
+            <input
+                id="fontSize"
+                type="range" min="8" max="12" step="0.5"
+                oninput="setFontSize()">
+            <output
+                id="fontSizeState"
+                onclick="resetFontSize()"
+                aria-live="polite"
+                >10</output>
+        </label>
+    </div>
+        <!-- baselineStretch.html -->
+    <div id="setBaselineStretch" class="has-aria-label-top" aria-label="Baseline Stretch">
+        <label class="range" for="baselineStretch">
+            <input
+                id="baselineStretch"
+                type="range" min="0.8" max="1.2" step="0.05"
+                oninput="setStretch()"
+                >
+            <output
+                id="baselineStretchState"
+                onclick="resetStretch()"
+                aria-live="polite"
+                >1</output>
+        </label>
+    </div>
+        <!-- OpenDyslexic.html -->
+    <div id="setOpenDyslexic">
+        <input
+            id="OpenDyslexic"
+            type="checkbox"
+            onclick="useOpenDyslexic()"
+            aria-label="Use OpenDyslexic Font"
+            >
+            <label
+                class="has-aria-label-top"
+                for="OpenDyslexic"
+                aria-label="Use OpenDyslexic Font"
+                >
+                <span id="OpenDyslexicState" aria-hidden="true">
+                    <span id="OpenDyslexicIndicator"></span>
+                </span>
+            </label>
+    </div>
+        <!-- menu.html -->
+    <menu
+        id="a11y-menu"
+        class="hide"
+        role="toolbar"
+        aria-label="Accessibility Menu Controls"
+        >
+        <button
+            id="saveButton" class="reverse"
+            onclick="saveA11y()"
+            disabled>Save
+        </button>
+        <button
+            id="resetButton" class="has-aria-label"
+            onclick="resetA11y()"
+            aria-label="Reset"
+            disabled>
+        </button>
+        <button
+            id="closeButton" class="has-aria-label"
+            onclick="closeA11yConsole()"
+            aria-label="Close"
+            >
+        </button>
+    </menu>
+        <noscript>
+            <center id="noScript" role="alert">Uh-oh... Javascript is disabled!</center>
+        </noscript>
+        <center id="noLocalStorage" class="hide" role="alert">LocalStorage is not available in your browser. Settings won&#39;t be saved.</center>
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <!-- bionread.html -->
+    <div id="useBionRead" class="hide">
+        <input
+            id="bionReadSwitch"
+            accesskey="b" type="checkbox"
+            onclick="bionRead()"
+            aria-keyshortcuts="b"
+            aria-label="BionRead Mode"
+            >
+            <label id="bionReadButton" for="bionReadSwitch">
+                <span><strong>Bion</strong>Read</span>
+                <kbd class="key">b</kbd>
+            </label>
+    </div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass Navigation">
+        <a id="to-top" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <kbd class="key">c</kbd>
+        </a>
+    </nav>
+</footer>
+
+    
+    <!-- [post] single.html --><script>document.getElementById('setColorPalette').setAttribute('style', 'display:flex;');</script>
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation">
+        <div id="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

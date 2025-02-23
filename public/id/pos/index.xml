@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pos on Lattice Services</title>
+    <link>http://localhost:1313/id/pos/</link>
+    <description>Recent Posts in Pos on Lattice Services</description>
+    <generator>Hugo 0.144.2</generator>
+    <language>en-us</language>
+    <managingEditor>Author Name</managingEditor>
+    
+      <webMaster>Author Name</webMaster>
+    <lastBuildDate>Sat, 22 Feb 2025 23:55:00 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/id/pos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Menambahkan Gambar Sampul dan Artikel Audio</title>
+      <link>http://localhost:1313/id/pos/mengatur-sampul-dan-audio/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <author>Author Name</author>
+      <guid>http://localhost:1313/id/pos/mengatur-sampul-dan-audio/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Mengatur Entri `Terms`</title>
+      <link>http://localhost:1313/id/pos/mengatur-entri-terms/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+      <author>Author Name</author>
+      <guid>http://localhost:1313/id/pos/mengatur-entri-terms/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Mengatur Riwayat Redaksi</title>
+      <link>http://localhost:1313/id/pos/mengatur-riwayat-redaksi/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+      <author>Author Name</author>
+      <guid>http://localhost:1313/id/pos/mengatur-riwayat-redaksi/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Menambahkan Diskusi</title>
+      <link>http://localhost:1313/id/pos/mengatur-diskusi/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <author>Author Name</author>
+      <guid>http://localhost:1313/id/pos/mengatur-diskusi/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Mengatur Logo dan Aksen Warna</title>
+      <link>http://localhost:1313/id/pos/mengatur-logo-dan-aksen-warna/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <author>Author Name</author>
+      <guid>http://localhost:1313/id/pos/mengatur-logo-dan-aksen-warna/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Mengatur Menu</title>
+      <link>http://localhost:1313/id/pos/mengatur-menu/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <author>Author Name</author>
+      <guid>http://localhost:1313/id/pos/mengatur-menu/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Mengatur Pagefind</title>
+      <link>http://localhost:1313/id/pos/mengatur-pagefind/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <author>Author Name</author>
+      <guid>http://localhost:1313/id/pos/mengatur-pagefind/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Mengatur Slide Beranda</title>
+      <link>http://localhost:1313/id/pos/mengatur-slide/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <author>Author Name</author>
+      <guid>http://localhost:1313/id/pos/mengatur-slide/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Tes Markdown</title>
+      <link>http://localhost:1313/id/pos/tes-markdown/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <author>Author Name</author>
+      <guid>http://localhost:1313/id/pos/tes-markdown/</guid>
+      <description></description>
+      
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,151 @@
+{{- define "head" }}
+    {{- $instance := partial "partials/fediverse/instance.html" . }}
+    {{- $username := partial "partials/fediverse/username.html" .}}
+    {{ if and $instance $username }}
+        <meta name="fediverse:creator" content="{{ print "@" $username "@" $instance }}">
+    {{ end }}
+    {{- /*
+
+        MathML render engine    */}}
+    {{- if or .Params.Math site.Params.Math }}
+        {{ partialCached "head/js/katex.html" . }}
+    {{- else if or .Params.MathJax site.Params.MathJax }}
+        {{ partialCached "head/js/mathjax.html" . }}
+    {{- end }}
+    {{- /*
+
+        Verbatim Style */}}
+    {{- with findRE `class="chroma"` .Content 1 }}
+        {{ partialCached "head/css/verbatim.html" $ }}
+    {{- end }}
+    {{- /*
+
+        use Highlight.js */}}
+    {{- if .Params.Hljs -}}
+        {{ partialCached "head/css/verbatim.html" . }}
+        {{ partialCached "head/js/hljs.html" . }}
+    {{- end }}
+    {{- /*
+
+        QRCode */}}
+    {{/*  {{ partialCached "head/js/qrcode.html" . }}  */}}
+{{- end }}
+
+{{- define "main" }}
+    {{- $commentIsEnable :=  not site.Params.comments.disabled}}
+    {{- $commentUrl := or .Params.toot .Params.comment }}
+    {{- $instance := partial "partials/fediverse/instance.html" . }}
+    {{- $username :=  partial "partials/fediverse/username.html" . }}
+    {{- $post := partial "partials/fediverse/post.html" . }}
+    {{- $commentIsToot := false }}
+    {{- $avatar := false }}
+    {{- $displayName := false }}
+    {{- if and $commentIsEnable $instance $username $post }}
+        {{- $api := print "https://" $instance "/api/v1/statuses/" $post }}
+        {{- with resources.GetRemote $api }}
+            {{- $data := . | transform.Unmarshal }}
+            {{- $commentIsToot = $data.content }}
+            {{- $commentUrl = $data.url }}
+            {{- $avatar = $data.account.avatar }}
+            {{- $displayName = $data.account.display_name }}
+        {{- end }}
+    {{- end }}
+
+    <article id="main-article" class="pagewidth"
+        role="document" aria-labelledby="title"
+        {{- if ne (lower .Params.type) (or "post" "articles") }}
+            data-pagefind-ignore="all"
+        {{- else }}
+            data-pagefind-body
+        {{- end }}>
+        <header class="textwidth" aria-labelledby="title">
+            {{ partial "page/title.html" . }}
+            <div id="doc-author" class="textsw author">
+                {{- $author := cond .Params.author .Params.author site.Params.Author.name }}
+                {{- $authors := .GetTerms "author" }}
+                {{- $notMultiAuthor := eq (len $authors) 1 }}
+                {{- if $authors }}
+                    {{- if $notMultiAuthor }}
+                        {{- range $authors }}
+                            {{ $flair := .Params.flair }}
+                            {{- if $flair }}
+                                {{- $displayPicture := partial "partials/page/cover.html" (dict "page" .) }}
+                                <a id="avatar" href="{{ .Permalink }}" aria-label="{{ .LinkTitle }}">
+                                    <img src="{{ $displayPicture }}" alt="{{ .LinkTitle }}"/>
+                                </a>
+                            {{- else if and $commentIsEnable $commentIsToot }}
+                                <a id="avatar" href="{{ print "https://" $instance "/@" $username }}" aria-label="{{ $displayName }}">
+                                    <img src="{{ $avatar }}" alt="{{ $displayName }}"/>
+                                </a>
+                            {{- end }}
+                            <a href="{{ .Permalink }}"
+                                {{- if $flair }}
+                                    class="has-aria-label"
+                                    aria-label="{{ $flair }}"
+                                {{- else if and $commentIsEnable $commentIsToot }}
+                                    class="has-aria-label"
+                                    aria-label="{{ print "@" $username "@" $instance}}"
+                                {{- end }}>
+                                {{- .LinkTitle -}}
+                            </a>
+                        {{- end }}
+                    {{- else }}
+                        {{ partial "terms.html" (dict "taxonomy" "author" "class" "delimiter" "page" .) }}
+                    {{- end }}
+                {{- else if $author -}}
+                    <span>{{ $author }}</span>
+                {{- end }}
+            </div>
+            {{ partial "page/timestamp.html" . }}
+        </header>
+        {{- with .Params.toc }}
+            {{ partial "nav.html" (dict "navID" "TableOfContents" "page" $) }}
+        {{- end }}
+        {{ partial "page/audio.html" . }}
+        <section aria-labelledby="Title" id="content" data-bionRead-safe {{- with .Params.secnum }} class="secnum"{{- end }}>
+            {{- if or .Params.task site.Params.Post.enableCheckbox }}
+                {{ replace .Content "disabled=" "" | safeHTML }}
+            {{- else }}
+                {{ .Content }}
+            {{- end }}
+        </section>
+        <footer>
+            {{ partial "post/tagged.html" . }}
+        </footer>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+        {{- if or .Params.related site.Params.posts.related }}
+            {{ partial "post/related.html" . }}
+        {{- end }}
+        {{- if not site.Params.posts.disableHistory }}
+            {{ partial "post/history.html" . }}
+        {{- end }}
+        {{- if or .Params.colophon site.Params.posts.colophon }}
+            {{ partial "post/colophon.html" . }}
+        {{- end }}
+        {{ partial "post/contribute.html" . }}
+        {{- if site.Params.posts.share }}
+            {{ partial "nav.html" (dict "navID" "share" "page" .) }}
+        {{- end }}
+    </div>
+    {{ if $commentIsEnable -}}
+        <div class="pagewidth">
+            {{- if $commentIsToot }}
+                {{ partial "fediverse.html" (dict "instance" $instance "user" $username "post" $post "tootContent" $commentIsToot "commentUrl" $commentUrl) }}
+            {{- end }}
+        </div>
+    {{- end }}
+{{- end }}
+
+{{- define "post" }}
+    {{ "<!-- [post] single.html -->" | safeHTML }}
+    {{- /* display color palette for pages with code blocks */}}
+    {{- with findRE `class="chroma"` .Content 1 -}}
+        <script>document.getElementById('setColorPalette').setAttribute('style', 'display:flex;');</script>
+    {{- end }}
+    {{- /*
+
+        bionRead Snapshot */}}
+    <div id="bionReadSnapshot" hidden></div>
+{{- end }}

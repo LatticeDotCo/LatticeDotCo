@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pagefind on Lattice Services</title>
+    <link>http://localhost:1313/tags/pagefind/</link>
+    <description>Recent Posts in Pagefind on Lattice Services</description>
+    <generator>Hugo 0.144.2</generator>
+    <language>en-us</language>
+    <managingEditor>Author Name</managingEditor>
+    
+      <webMaster>Author Name</webMaster>
+    <lastBuildDate>Sat, 22 Feb 2025 23:36:27 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pagefind/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configure Pagefind</title>
+      <link>http://localhost:1313/en/post/configure-pagefind/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <author>Author Name</author>
+      <guid>http://localhost:1313/en/post/configure-pagefind/</guid>
+      <description></description>
+      
+    </item>
+  </channel>
+</rss>
