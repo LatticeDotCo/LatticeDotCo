@@ -1,96 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on </title>
-    <link>http://localhost:1313/tags/</link>
-    <description>Recent Posts in Tags on </description>
-    <generator>Hugo 0.144.2</generator>
+    <title>Tags on TailBliss</title>
+    <link>https://latticecorp.cloud/tags/</link>
+    <description>Recent content in Tags on TailBliss</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <managingEditor>Lattice Corp</managingEditor>
-    
-      <webMaster>Lattice Corp</webMaster>
-    <lastBuildDate>Sun, 23 Feb 2025 02:31:00 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Jun 2022 11:10:36 +0800</lastBuildDate>
+    <atom:link href="https://latticecorp.cloud/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Data Architecture</title>
-      <link>http://localhost:1313/tags/data-architecture/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <author>Lattice Corp</author>
-      <guid>http://localhost:1313/tags/data-architecture/</guid>
+      <title>Blog</title>
+      <link>https://latticecorp.cloud/tags/blog/</link>
+      <pubDate>Sat, 18 Jun 2022 11:10:36 +0800</pubDate>
+      <guid>https://latticecorp.cloud/tags/blog/</guid>
       <description></description>
-      
     </item>
     <item>
-      <title>Datalake</title>
-      <link>http://localhost:1313/tags/datalake/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <author>Lattice Corp</author>
-      <guid>http://localhost:1313/tags/datalake/</guid>
+      <title>News</title>
+      <link>https://latticecorp.cloud/tags/news/</link>
+      <pubDate>Wed, 18 May 2022 11:10:36 +0800</pubDate>
+      <guid>https://latticecorp.cloud/tags/news/</guid>
       <description></description>
-      
-    </item>
-    <item>
-      <title>DevOps</title>
-      <link>http://localhost:1313/tags/devops/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <author>Lattice Corp</author>
-      <guid>http://localhost:1313/tags/devops/</guid>
-      <description></description>
-      
-    </item>
-    <item>
-      <title>IaC</title>
-      <link>http://localhost:1313/tags/iac/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <author>Lattice Corp</author>
-      <guid>http://localhost:1313/tags/iac/</guid>
-      <description></description>
-      
-    </item>
-    <item>
-      <title>LLMs</title>
-      <link>http://localhost:1313/tags/llms/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <author>Lattice Corp</author>
-      <guid>http://localhost:1313/tags/llms/</guid>
-      <description></description>
-      
-    </item>
-    <item>
-      <title>Mineria</title>
-      <link>http://localhost:1313/tags/mineria/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <author>Lattice Corp</author>
-      <guid>http://localhost:1313/tags/mineria/</guid>
-      <description></description>
-      
-    </item>
-    <item>
-      <title>Ml Pipelines</title>
-      <link>http://localhost:1313/tags/ml-pipelines/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <author>Lattice Corp</author>
-      <guid>http://localhost:1313/tags/ml-pipelines/</guid>
-      <description></description>
-      
-    </item>
-    <item>
-      <title>ModelOps</title>
-      <link>http://localhost:1313/tags/modelops/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <author>Lattice Corp</author>
-      <guid>http://localhost:1313/tags/modelops/</guid>
-      <description></description>
-      
-    </item>
-    <item>
-      <title>Pipelines</title>
-      <link>http://localhost:1313/tags/pipelines/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <author>Lattice Corp</author>
-      <guid>http://localhost:1313/tags/pipelines/</guid>
-      <description></description>
-      
     </item>
   </channel>
 </rss>

@@ -1,371 +1,218 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <!-- head.html --><!-- meta.html -->
+<html lang="en">
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Categories | Lattice Services</title>
-<meta name="author" content="Lattice Corp">
-<meta name="description" content="taxonomy | Lattice Services" >
-<link rel="canonical" href="http://localhost:1313/categories/">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://latticecorp.cloud/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://latticecorp.cloud/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://latticecorp.cloud/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://latticecorp.cloud/favicon/site.webmanifest">
+<link rel="mask-icon" href="https://latticecorp.cloud/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title itemprop="name"> Categories | TailBliss 
+</title>
+<meta name="description" content="A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format." />
+<meta property="og:title" content="Categories | TailBliss" />
+<meta name="twitter:title" content="Categories | TailBliss" />
+<meta itemprop="name" content="Categories | TailBliss" />
+<meta name="application-name" content="Categories | TailBliss" />
+<meta property="og:description"
+      content="A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format." />
+<meta property="og:site_name" content="TailBliss" />
+<meta property="og:url" content="https://latticecorp.cloud/categories/" />
+<meta property="og:locale" content="en">
+<meta property="og:image" content="/images/tailbliss-cover.png" />
+<meta property="og:image:secure_url" content="https://latticecorp.cloud/images/tailbliss-cover.png" />
+<meta property="og:type" content="article" />
 
-
-
+<script>
     
-    <!-- twitterCard -->
-    
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Categories | Lattice Services" />
-    <meta name="twitter:description" content="taxonomy | Lattice Services" />
-        <meta name="twitter:image" content="https://repository-images.githubusercontent.com/923527728/46a32a19-69ac-45b3-91a4-c4d299fb234b" />
-    
-    <!-- openGraph -->
-    <meta property="og:title" content="Categories | Lattice Services" />
-    <meta property="og:description" content="taxonomy | Lattice Services" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://localhost:1313/categories/" />
-        <meta property="og:image" content="https://repository-images.githubusercontent.com/923527728/46a32a19-69ac-45b3-91a4-c4d299fb234b" />
-    <meta property="og:site_name" content="Lattice Services" /><link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/index.xml" title="" />
-    <!-- js.html -->
-    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
-    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
-    <!-- css/inline.html -->
-    <style>
-         
-        body {max-width: 786px; margin: auto; padding: 2rem;}
-        img {max-width: 86vw;}
-    </style>
-    <!-- list.html [head] -->
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+</script>
+
+
+
+<link rel="stylesheet" href="https://latticecorp.cloud/css/style.css" />
+
 </head>
-<body >
-    <!-- header.html -->
-<header class="pagewidth">
-    <div id="background-header" class="background" aria-hidden="true"></div>
-    
-    <nav aria-label="Bypass Navigation">
-        <a id="to-content" class="underline" href="#list-posts" aria-label="Skip to Main Content">
-            <span>Skip to Main Content</span>
-            <kbd class="key" aria-hidden="true">c</kbd>
-            <span class="screening" aria-hidden="true"></span>
-        </a>
-    </nav>
-    
-        <a id="logo" href="http://localhost:1313/" aria-label="Lattice Services">
-                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="448pt">
-            <text id="logotype__text" y="19.5pt" x="0">Lattice Services</text>
-        </svg>
-        </a>
-    
-    <details class="presentation" id="top-nav">
-        <summary class="on-deck">
-            <span class="t t2">Navigation</span>
-            <span class="menu-icon" role="presentation"></span>
-        </summary>
-        <nav tabindex="-1" aria-label="Top Nav">
-            <!-- menu.html -->
-            
-            <!-- menu.html -->
-            <!-- i18n.html -->
 
-
+<body class="bg-zinc-100 dark:bg-gray-800">
+    <div class="top-0 z-50 w-full text-gray-200 bg-gray-900 border-2 border-gray-900 md:sticky border-b-stone-200/10">
+    <div x-data="{ open: false }" class="flex flex-col max-w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="flex flex-row items-center justify-between p-4">
+            <a href="https://latticecorp.cloud/" class="flex text-gray-100 transition duration-1000 ease-in-out group">
+                <img src="https://latticecorp.cloud/images/site-logo.svg" class="transition-opacity h-9 w-9 group-hover:opacity-50 group-focus:opacity-70" alt="TailBliss Logo" />
+                <div class="mt-1 ml-3 text-xl font-black tracking-tight text-gray-100 uppercase transition-colors group-hover:text-gray-400/60">
+                    TailBliss</div>
+            </a>
+            <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open" role="navigation" aria-expanded="false" aria-label="Main" aria-controls="menuItems">
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                    <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+            
+            
+            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" href="https://latticecorp.cloud/prose/" title="Prose">
+                Prose
+            </a>
+            
+            
+            
+            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" href="https://latticecorp.cloud/about/" title="About">
+                About
+            </a>
+            
+            
+            
+            <button id="theme-toggle" type="button" class="p-2 text-sm text-gray-500 rounded-lg md: dark:text-gray-400 md:hover:bg-gray-100 dark:md:hover:bg-gray-700 md:focus:outline-none md:focus:ring-4 md:focus:ring-gray-200 dark:md:focus:ring-gray-700 md:ml-2 xs:hidden">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z">
+                    </path>
+                </svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-label="Dark or Light Mode" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            
         </nav>
-        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
-    </details>
-</header>
+    </div>
+</div>
     
-    <!-- [main] baseof.html -->
-    <main id="taxonomy">
-        <!-- main/header.html -->
-        <header class="pagewidth">
-            
-            <!-- menu.html -->
-    <menu role="presentation">
-        <li>
-            <a id="print-button" class="hide" href="javascript:window.print()" title="Print" role="button" aria-label="Print">
-                <span class="t" role="tooltip">Print</span>
-            </a>
-        </li>
-        <li>
-            <a id="navigatorShare" href="javascript:navigator.share({title: document.title, url: window.location.href})" title="Share" role="button" aria-label="Share">
-                <span class="t" role="tooltip">Share</span>
-            </a>
-        </li>
-        <li>
-            <a id="copyPermalink" class="hide" href="javascript:navigator.clipboard.writeText(window.location.href)" title="Copy Url" role="button" aria-label="Copy Url">
-                <span class="t" role="tooltip">Copy Url</span>
-            </a>
-        </li>
-    </menu>
-    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
-        <span class="t" role="tooltip">Go Back</span>
-    </button>
-            
-                <!-- nav.html -->
-<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
-    <summary id="breadcrumb" tabindex="-1">
-        <span>Breadcrumb</span>
-    </summary>
-        <nav aria-labelledby="breadcrumb">
-            <ul role="presentation" class="breadcrumb">
-                    <!-- breadcrumb.html -->
-    <li>
-        <a href="" aria-current="page" tabindex="-1">Categories
-        </a>
-    </li>
-            </ul>
-        </nav>
-</details>
+<main>
+    <article>
+        <header class="mb-4 bg-primary-600">
+            <span class="py-96">
+                <h1 class="py-16 text-5xl font-black text-center text-white capitalize">
+                    Categories
+                </h1>
+            </span>
         </header>
-        <div id="top" role="presentation">
-            
-        </div>
         
-    
-            <section class="pagewidth">
-                    <!-- listing.html -->
-        <div id="list-categories" class="carousel">
-            <header class="section-title">Categories</header>
-            <!-- taxonomies.html -->
-        <ul class="carousel__viewport" role="presentation">
+        <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50">
+    <div class="px-4 not-prose">
+        <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
             
-                    <li  style="background-image:url(https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/1.svg);">
-                        <a href="http://localhost:1313/categories/arquitectura-de-datos/"
-                            aria-label="Category:Arquitectura De Datos"
-                            data-post-counter="1"
-                            >
-                            <span>Arquitectura De Datos</span>
+            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
+                <a href="https://latticecorp.cloud/categories/blog/">
+                    
+                </a>
+                <div class="p-6">
+                    <div class="flex-1">
+                        <a href="https://latticecorp.cloud/categories/blog/"
+                           class="block mt-2 text-2xl font-black text-gray-900 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-500 hover:underline">
+                            Blog
                         </a>
-                    </li>
-                    <li  style="background-image:url(https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/20.svg);">
-                        <a href="http://localhost:1313/categories/machine-learning/"
-                            aria-label="Category:Machine Learning"
-                            data-post-counter="1"
-                            >
-                            <span>Machine Learning</span>
-                        </a>
-                    </li>
-                    <li  style="background-image:url(https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/9.svg);">
-                        <a href="http://localhost:1313/categories/mlops/"
-                            aria-label="Category:MLOps"
-                            data-post-counter="1"
-                            >
-                            <span>Mlops</span>
-                        </a>
-                    </li>
-        </ul>
-        </div>
-            </section>
-        <!-- main/footer.html -->
-    <hr class="hide">
-        <footer id="main-footer">
-            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
-                        aria-labelledby="footer-1">
-                        <p><strong class="section-title">Lattice Corp<i class="icon copyleft"></i> 2025</strong></p>
-<p>Some rights reserved.</p>
-<br>
-<strong class="section-title">DATA / ML / GenIA / DevOps / IaC / IDP </strong>
-<p>Acelera el delivery de soluciones tecnológicas con nosotros.</p>
-
+                        <p class="mt-3 text-base text-gray-900 dark:text-gray-300">
+                            
+                        </p>
                     </div>
-                <div id="main-footer-secondary" class="column" style="--col: 15rem">                    
-                    <!-- menu.html -->
+                    <div class="flex pt-6 font-medium text-primary-600 dark:text-primary-100 text-md">
+                        <span class="pr-2 font-black">Tags:</span>
+                        <span>
+                        </span>
+                    </div>
+                    <div class="flex items-center mt-6">
+                        <div class="flex-shrink-0">
+                            <span class="sr-only"></span>
+                            
+                        </div>
+                        <div class="pt-1 ml-3">
+                            <p class="text-sm font-medium text-gray-900 dark:text-white">
+                                
+                            </p>
+                            <div class="flex space-x-1 text-sm text-gray-500 dark:text-white">
+                                <time datetime="2022-06-18T11:10:36&#43;08:00">2022-06-18</time>
+                                <span aria-hidden="true">&middot;</span>
+                                <span>0 min read</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
-    </main>
-    <!-- footer.html -->
-<footer id="body-footer" class="pagewidth" style="display: none;">
-    <div id="background-footer" class="background" role="presentation"></div>
-    <!-- focusMode.html -->
-    <div id="focusMode" class="hide">
-        <input
-            id="defocusAuxElement"
-            accesskey="d" type="checkbox"
-            onclick="focusMode()"
-            aria-keyshortcuts="d"
-            aria-label="Focus Mode"
-            >
-            <label id="focusModeButton" for="defocusAuxElement">⦿</label>
-    </div>
-    <!-- a11y.html --><details id="has-a11y" class="presentation js-details" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
-    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
-        <span>&nbsp;Accessibility</span>
-        <kbd class="key">a</kbd>
-    </summary>
-    <!-- a11y console -->
-    <fieldset id="a11y" role="region" disabled>
-        <!-- brightness & contrast -->
-        <div id="setColorScheme" role="group" aria-label="Color Settings">
-            <!-- darkMode.html -->
-    <input
-        id="lightSwitch"
-        type="checkbox"
-        onclick="setColor()"
-        aria-label="Dark Mode"
-        >
-        <label for="lightSwitch">
-            <div class="has-aria-label off" role="status" aria-label="Light"></div>
-            <div class="has-aria-label on" role="status" aria-label="Dark"></div>
-            <div id="lightSwitchIndicator" aria-hidden="true"></div>
-        </label>
-            <!-- contrast.html -->
-    <fieldset id="setContrast">
-        <legend>Contrast</legend>
-        <input
-            id="lessContrast"
-            type="radio" name="setContrast" value="less"
-            onclick="setColor()"
-            >
-            <label for="lessContrast">
-                <span>Low</span>
-            </label>
-        <input
-            id="defaultContrast"
-            type="radio" name="setContrast" value="default"
-            onclick="setColor()"
-            >
-            <label for="defaultContrast">
-                <span>Default</span>
-            </label>
-        <input
-            id="moreContrast"
-            type="radio" name="setContrast" value="more"
-            onclick="setColor()"
-            >
-            <label for="moreContrast">
-                <span>High</span>
-            </label>
-    </fieldset>
+            
+            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
+                <a href="https://latticecorp.cloud/categories/news/">
+                    
+                </a>
+                <div class="p-6">
+                    <div class="flex-1">
+                        <a href="https://latticecorp.cloud/categories/news/"
+                           class="block mt-2 text-2xl font-black text-gray-900 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-500 hover:underline">
+                            News
+                        </a>
+                        <p class="mt-3 text-base text-gray-900 dark:text-gray-300">
+                            
+                        </p>
+                    </div>
+                    <div class="flex pt-6 font-medium text-primary-600 dark:text-primary-100 text-md">
+                        <span class="pr-2 font-black">Tags:</span>
+                        <span>
+                        </span>
+                    </div>
+                    <div class="flex items-center mt-6">
+                        <div class="flex-shrink-0">
+                            <span class="sr-only"></span>
+                            
+                        </div>
+                        <div class="pt-1 ml-3">
+                            <p class="text-sm font-medium text-gray-900 dark:text-white">
+                                
+                            </p>
+                            <div class="flex space-x-1 text-sm text-gray-500 dark:text-white">
+                                <time datetime="2022-05-18T11:10:36&#43;08:00">2022-05-18</time>
+                                <span aria-hidden="true">&middot;</span>
+                                <span>0 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-        <!-- colorPalette.html -->
-    <div id="setColorPalette" style="display:none;">
-        <label for="colorPalette">Color Palette</label>
-        <select id="colorPalette" name="colorPalette" oninput="setColorPalette()">
-            <option value="defaultColor">Default</option>
-            <option value="deuteranopia">Deuteranopia</option>
-            <option value="protanopia">Protanopia</option>
-            <option value="tritanopia">Tritanopia</option>
-            <option value="monochrome">Monochrome</option>
-        </select>
     </div>
-        <!-- fontsize.html -->
-    <div class="has-aria-label-top" aria-label="Font Size">
-        <label class="range" for="fontSize" aria-label="Font Size">
-            <input
-                id="fontSize"
-                type="range" min="8" max="12" step="0.5"
-                oninput="setFontSize()">
-            <output
-                id="fontSizeState"
-                onclick="resetFontSize()"
-                aria-live="polite"
-                >10</output>
-        </label>
-    </div>
-        <!-- baselineStretch.html -->
-    <div id="setBaselineStretch" class="has-aria-label-top" aria-label="Baseline Stretch">
-        <label class="range" for="baselineStretch">
-            <input
-                id="baselineStretch"
-                type="range" min="0.8" max="1.2" step="0.05"
-                oninput="setStretch()"
-                >
-            <output
-                id="baselineStretchState"
-                onclick="resetStretch()"
-                aria-live="polite"
-                >1</output>
-        </label>
-    </div>
-        <!-- OpenDyslexic.html -->
-    <div id="setOpenDyslexic">
-        <input
-            id="OpenDyslexic"
-            type="checkbox"
-            onclick="useOpenDyslexic()"
-            aria-label="Use OpenDyslexic Font"
-            >
-            <label
-                class="has-aria-label-top"
-                for="OpenDyslexic"
-                aria-label="Use OpenDyslexic Font"
-                >
-                <span id="OpenDyslexicState" aria-hidden="true">
-                    <span id="OpenDyslexicIndicator"></span>
-                </span>
-            </label>
-    </div>
-        <!-- menu.html -->
-    <menu
-        id="a11y-menu"
-        class="hide"
-        role="toolbar"
-        aria-label="Accessibility Menu Controls"
-        >
-        <button
-            id="saveButton" class="reverse"
-            onclick="saveA11y()"
-            disabled>Save
-        </button>
-        <button
-            id="resetButton" class="has-aria-label"
-            onclick="resetA11y()"
-            aria-label="Reset"
-            disabled>
-        </button>
-        <button
-            id="closeButton" class="has-aria-label"
-            onclick="closeA11yConsole()"
-            aria-label="Close"
-            >
-        </button>
-    </menu>
-        <noscript>
-            <center id="noScript" role="alert">Uh-oh... Javascript is disabled!</center>
-        </noscript>
-        <center id="noLocalStorage" class="hide" role="alert">LocalStorage is not available in your browser. Settings won&#39;t be saved.</center>
-    </fieldset>
-    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
-</details>
+</div>
 
+    </article>
+    <div class="max-w-xl mx-auto my-16">
+        
 
-    <!-- bionread.html -->
-    <div id="useBionRead" class="hide">
-        <input
-            id="bionReadSwitch"
-            accesskey="b" type="checkbox"
-            onclick="bionRead()"
-            aria-keyshortcuts="b"
-            aria-label="BionRead Mode"
-            >
-            <label id="bionReadButton" for="bionReadSwitch">
-                <span><strong>Bion</strong>Read</span>
-                <kbd class="key">b</kbd>
-            </label>
     </div>
-    <!-- [top] bypass block -->
-    <nav aria-label="Bypass Navigation">
-        <a id="to-top" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
-            <kbd class="key">c</kbd>
-        </a>
-    </nav>
-</footer>
+</main>
 
     
-    <!-- [background] baseof.html -->
-    <div id="background-body"
-        role="presentation">
-        <div id="grain" hidden></div>
-        <div id="dwclock" hidden>
-            <div id="min">
-                <div class="hand"></div>
-            </div>
-            <div id="hour">
-                <div class="hand"></div>
-            </div>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<script src="https://latticecorp.cloud/js/darkmode.js" defer></script>
+<footer class="bg-gray-900">
+    <div class="max-w-md px-4 py-12 mx-auto overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+        <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
+            
+        </nav>
+        <div class="flex justify-center mt-8 space-x-6">
+            
+            
+            
+            
         </div>
+        <p class="mt-8 text-base text-center text-gray-400">&copy; 2025
+            TailBliss. All rights
+            reserved.</p>
+        <p class="mt-2 text-base text-center text-gray-400">Made with &#x2764;&#xfe0f; by <a
+               href="https://nusserstudios.com" class="hover:underline hover:text-primary-600"><span
+                      class="font-black uppercase">Nusser</span> <span class="font-light uppercase">Studios.</span></a>
+        </p>
     </div>
+</footer>
 </body>
+
 </html>
